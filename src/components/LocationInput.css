@@ -1,0 +1,120 @@
+.location-input {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  background: #f9f9f9;
+}
+
+.location-input h3 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.location-status {
+  margin-bottom: 1rem;
+}
+
+.location-found {
+  padding: 0.75rem;
+  background: #dcfce7;
+  border: 1px solid #16a34a;
+  border-radius: 8px;
+  color: #15803d;
+  font-weight: 500;
+}
+
+.location-needed {
+  padding: 0.75rem;
+  background: #fef3c7;
+  border: 1px solid #d97706;
+  border-radius: 8px;
+  color: #92400e;
+  font-weight: 500;
+}
+
+.location-actions {
+  margin-bottom: 1rem;
+}
+
+.location-btn {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #10b981;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.location-btn:hover:not(:disabled) {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.location-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.address-search {
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1rem;
+}
+
+.address-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.address-input-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.address-input-group input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.address-search-btn {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.address-search-btn:hover:not(:disabled) {
+  background: #2563eb;
+}
+
+.address-search-btn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .location-input {
+    padding: 1rem;
+  }
+  
+  .address-input-group {
+    flex-direction: column;
+  }
+  
+  .address-search-btn {
+    width: 100%;
+  }
+}
